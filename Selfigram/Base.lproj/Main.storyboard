@@ -20,7 +20,45 @@
                     <view key="view" contentMode="scaleToFill" id="wma-Ir-pdw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bdn-PB-AWa">
+                                <rect key="frame" x="149" y="370" width="76" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hT4-J3-dy0">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l23-P3-7Tk">
+                                <rect key="frame" x="69" y="340" width="54" height="30"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Camera"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l6w-2e-d9v">
+                                <rect key="frame" x="97.5" y="110" width="180" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="7MG-QV-xWG"/>
+                                    <constraint firstAttribute="width" constant="180" id="Pt8-c5-u8G"/>
+                                    <constraint firstAttribute="width" constant="180" id="Rnm-tO-ilF"/>
+                                    <constraint firstAttribute="width" constant="180" id="XXJ-bQ-kF9"/>
+                                    <constraint firstAttribute="height" constant="185" id="bU4-4c-s2T"/>
+                                    <constraint firstAttribute="height" constant="185" id="fqO-VC-dSR"/>
+                                    <constraint firstAttribute="height" constant="185" id="fwI-LE-WiZ"/>
+                                    <constraint firstAttribute="width" constant="180" id="tLv-LL-Omx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l6w-2e-d9v" firstAttribute="centerX" secondItem="wma-Ir-pdw" secondAttribute="centerX" id="NgC-B4-IZ6"/>
+                            <constraint firstItem="l23-P3-7Tk" firstAttribute="top" secondItem="l6w-2e-d9v" secondAttribute="bottom" id="Tch-w9-xq6"/>
+                            <constraint firstItem="l6w-2e-d9v" firstAttribute="leading" secondItem="l23-P3-7Tk" secondAttribute="trailing" constant="-25.5" id="lZE-IH-981"/>
+                            <constraint firstItem="l6w-2e-d9v" firstAttribute="centerX" secondItem="wma-Ir-pdw" secondAttribute="centerX" id="pZt-Zj-yQm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Y8q-0h-cSc"/>
                 </viewController>
