@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="AtF-iU-vLo">
             <objects>
-                <viewController id="Qqq-nR-a1z" sceneMemberID="viewController">
+                <viewController id="Qqq-nR-a1z" customClass="ProfileViewController" customModule="Selfigram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IB4-yZ-ei5"/>
                         <viewControllerLayoutGuide type="bottom" id="iJt-QJ-UIt"/>
@@ -37,6 +37,9 @@
                                 <rect key="frame" x="69" y="340" width="54" height="30"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraButtonPressed:" destination="Qqq-nR-a1z" eventType="touchUpInside" id="VrS-Vt-5uI"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l6w-2e-d9v">
                                 <rect key="frame" x="97.5" y="110" width="180" height="230"/>
@@ -61,6 +64,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Y8q-0h-cSc"/>
+                    <connections>
+                        <outlet property="profileImageView" destination="l6w-2e-d9v" id="SsX-C0-C3v"/>
+                        <outlet property="usernameLabel" destination="hT4-J3-dy0" id="RNS-Wp-tJY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="El5-sD-hmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

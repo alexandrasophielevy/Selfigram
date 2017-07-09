@@ -14,6 +14,7 @@
 		D24473771F0ECD640061FE71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24473751F0ECD640061FE71 /* LaunchScreen.storyboard */; };
 		D24473821F0ECD640061FE71 /* SelfigramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24473811F0ECD640061FE71 /* SelfigramTests.swift */; };
 		D244738D1F0ECD640061FE71 /* SelfigramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244738C1F0ECD640061FE71 /* SelfigramUITests.swift */; };
+		D24473B01F12B6C10061FE71 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24473AF1F12B6C10061FE71 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D24473881F0ECD640061FE71 /* SelfigramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfigramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D244738C1F0ECD640061FE71 /* SelfigramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfigramUITests.swift; sourceTree = "<group>"; };
 		D244738E1F0ECD640061FE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D24473AF1F12B6C10061FE71 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		D24473601F0ECD640061FE71 = {
 			isa = PBXGroup;
 			children = (
+				D24473AF1F12B6C10061FE71 /* ProfileViewController.swift */,
 				D244736B1F0ECD640061FE71 /* Selfigram */,
 				D24473801F0ECD640061FE71 /* SelfigramTests */,
 				D244738B1F0ECD640061FE71 /* SelfigramUITests */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24473B01F12B6C10061FE71 /* ProfileViewController.swift in Sources */,
 				D244736F1F0ECD640061FE71 /* ViewController.swift in Sources */,
 				D244736D1F0ECD640061FE71 /* AppDelegate.swift in Sources */,
 			);
